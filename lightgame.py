@@ -6,10 +6,10 @@ import random
 score = 0
 count_seconds = 0
 difficulty = 0
-time_on_min = [0.50,0.25,0.15]
-time_on_max = [1,0.50,0.25]
-time_off_min = [0.50,0.25,0.15]
-time_off_max = [1,1,1]
+time_on_min = [0.50,0.25,0.15,0.10,0.05]
+time_on_max = [1,0.50,0.25,0.20,0.10]
+time_off_min = [0.50,0.25,0.15,0.10,0.05]
+time_off_max = [1,1,1,1,1]
 
 
 
@@ -35,6 +35,8 @@ while True:
     print (difficulty)
     green.off()
     red.off()
+    blue.off()
+    white.off()
     while not button.is_pressed:
         yellow.on()
         sleep(
@@ -89,6 +91,12 @@ while True:
         if count_seconds == start_menu + (twobytwo*3):
             red.on()
             difficulty = 2
+        if count_seconds == start_menu + (twobytwo*4):
+            blue.on()
+            difficulty = 3
+        if count_seconds == start_menu + (twobytwo*5):
+            white.on()
+            difficulty = 4
         
         sleep(0.5)
         count_seconds = count_seconds + 0.5
