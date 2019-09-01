@@ -11,6 +11,8 @@ time_on_max = [1,0.50,0.25,0.20,0.10]
 time_off_min = [0.50,0.25,0.15,0.10,0.05]
 time_off_max = [1,1,1,1,1]
 
+print (time_on_max, time_off_max)
+print (time_off_max, time_off_min)
 
 
 
