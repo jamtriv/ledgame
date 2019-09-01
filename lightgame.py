@@ -32,7 +32,6 @@ white.off()
 blue.off()
 
 while True:
-    print (difficulty)
     green.off()
     red.off()
     blue.off()
